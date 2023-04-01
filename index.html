@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="form-header">
+            <img src="images/mainImage.jpg" alt="">
+            <div class="welcome-text">
+                Before you start selling you need to Sign Up
+            </div>
+        </div>
+    </header>
+
+        <form action="" method="get" class="seller-form">
+            <div class="form-row">
+                <label for="full-name">Name:</label>
+                <input type="text" id="full-name" name="full-name">
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div class="form-row">
+                <label for="password2">Confirm password:</label>
+                <input type="password" id="password2" name="password2">
+            </div>
+
+            <fieldset class="legacy-form-row">
+                <legend>Type of user</legend>
+                <input type="radio" name="user-type" id="user-type1" value="seller">
+                <label for="user-type1" class="radio-label">Seller</label>
+                <input type="radio" name="user-type" id="user-type2" value="buyer">
+                <label for="user-type2" class="radio-label">Buyer</label>
+                <input type="radio" name="user-type" id="user-type3" value="both" checked>
+                <label for="user-type3" class="radio-label">Both</label>
+            </fieldset>
+
+            <div class="form-row-button"><button>Submit</button></div>
+        </form>
+</body>
+</html>
