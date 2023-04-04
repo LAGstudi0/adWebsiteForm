@@ -5,47 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Sign Up</title>
+    <script>
+        function matchPasswords() {
+            var pwd1 = document.getElementById('password');
+            var pwd2 = document.getElementById('password2');
+    
+            if(pwd1 == pwd2) {
+                alert('password matched');
+            }   else {
+                alert('password did not match');
+            }
+        }
+    </script>
 </head>
 <body>
-    <header>
-        <div class="form-header">
-            <img src="images/mainImage.jpg" alt="">
-            <div class="welcome-text">
-                Before you start selling you need to Sign Up
-            </div>
+    <div class="img-container">
+        <div class="banner"></div>
+        <h1>LIVERSHOOP</h1>
+        <img class="form-photo" src="images/leaf.jpg" alt="">
+    </div>
+    <div class="form-container">
+        <div class="form-explanation">
+            <h1 class="form-top-text">If you want to use this website the first step is to <i>sign up!</i> Even though is 
+                not a real website I have to say that I am quite happy with the design, so slap some information and 
+                <i>sign up!</i>
+            </h1>
+            <h1 class="form-top-text" id="bottom">You know you want to!</h1>
         </div>
-    </header>
-
-        <form action="" method="get" class="seller-form">
-            <div class="form-row">
-                <label for="full-name">Name:</label>
-                <input type="text" id="full-name" name="full-name">
-            </div>
-            <div class="form-row">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div class="form-row">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
-            </div>
-            <div class="form-row">
-                <label for="password2">Confirm password:</label>
-                <input type="password" id="password2" name="password2">
-            </div>
-
-            <fieldset class="legacy-form-row">
-                <legend>Type of user</legend>
-                <input type="radio" name="user-type" id="user-type1" value="seller">
-                <label for="user-type1" class="radio-label">Seller</label>
-                <input type="radio" name="user-type" id="user-type2" value="buyer">
-                <label for="user-type2" class="radio-label">Buyer</label>
-                <input type="radio" name="user-type" id="user-type3" value="both" checked>
-                <label for="user-type3" class="radio-label">Both</label>
-            </fieldset>
-
-            <div class="form-row-button"><button>Submit</button></div>
+        
+            <form action="" method="get" class="seller-form">
+                <h1 class="form-top-text">Let's do this!</h1>
+                <div class="form-inputs-container">
+                    <div class="form-row">
+                        <label for="first-name">First name:</label>
+                        <input type="text" id="first-name" name="first-name" minlength="1">
+                    </div>
+                    <div class="form-row">
+                        <label for="second-name">Second name:</label>
+                        <input type="text" id="second-name" name="second-name" minlength="1">
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone number:</label>
+                        <input type="tel" id="phone" name="phone" minlength="7">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" minlength="7">
+                    </div>
+                    <div class="form-row">
+                        <label for="password2">Confirm password:</label>
+                        <input type="password" name="password2" minlength="7">
+                    </div>
+                    <!-- <fieldset class="legacy-form-row">
+                        <legend>Type of user</legend>
+                        <input type="radio" name="user-type" id="user-type1" value="seller">
+                        <label for="user-type1" class="radio-label">Seller</label>
+                        <input type="radio" name="user-type" id="user-type2" value="buyer">
+                        <label for="user-type2" class="radio-label">Buyer</label>
+                        <input type="radio" name="user-type" id="user-type3" value="both" checked>
+                        <label for="user-type3" class="radio-label">Both</label>
+                    </fieldset> -->
+                    
+                </div>
         </form>
+        <div class="form-row-button"><button onclick="matchPasswords()">Create account</button>
+        <span>Already have an account? <a href="">log in</a></span></div>
+    </div>
 </body>
+
+
+
 </html>
